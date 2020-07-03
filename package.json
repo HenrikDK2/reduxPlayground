@@ -4,8 +4,9 @@
   "description": "Jeg prøver at lære Redux at kende.",
   "main": "index.js",
   "dependencies": {
-    "redux-thunk": "^2.3.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
