@@ -1,2 +1,8 @@
 # reduxPlayground
-Jeg prøvet at lære Redux at kende.
+Jeg prøver at lære Redux at kende.
+
+## Install
+`npm i`
+
+## Run
+`npm run dev`
