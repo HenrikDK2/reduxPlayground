@@ -10,3 +10,12 @@ export const updateUsers = () => {
       });
   };
 };
+
+export const filterUsers = (value) => ({
+  type: "FILTERUSERS",
+  value,
+});
+
+export const resetUsers = () => ({
+  type: "RESETUSERS",
+});

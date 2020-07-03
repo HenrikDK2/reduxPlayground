@@ -1,9 +1,13 @@
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-import { updateUsers } from "./actions/index";
+import { updateUsers, resetUsers, filterUsers } from "./actions/index";
 import rootReducer from "./reducers";
+import "regenerator-runtime/runtime";
 
-const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
-store.subscribe(() => store.getState());
-store.dispatch(updateUsers());
+(async () => {
+  const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
+  store.subscribe(() => store.getState());
+  await store.dispatch(updateUsers());
+  store.dispatch(filterUsers("hew"));
+})();
