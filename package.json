@@ -1,0 +1,27 @@
+{
+  "name": "reduxPlayground",
+  "version": "1.0.0",
+  "description": "Jeg prøver at lære Redux at kende.",
+  "main": "index.js",
+  "dependencies": {
+    "redux-thunk": "^2.3.0",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "dev": "parcel serve ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenrikDK2/reduxPlayground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenrikDK2/reduxPlayground/issues"
+  },
+  "homepage": "https://github.com/HenrikDK2/reduxPlayground#readme"
+}
