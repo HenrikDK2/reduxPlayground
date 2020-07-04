@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .list-container {
   display: flex;
 }
@@ -6,5 +12,15 @@
   background: #f8f8f8;
   height: 500px;
   flex: 1;
+  padding: 20px;
   overflow-y: scroll;
+}
+
+input {
+  width: 30%;
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1.25rem;
+  max-width: 500px;
 }
