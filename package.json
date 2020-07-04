@@ -4,15 +4,35 @@
   "description": "Jeg prøver at lære Redux at kende.",
   "main": "index.js",
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "preact": "^10.4.5",
+    "preact-compat": "^3.19.0",
+    "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-emotion": "^10.0.33",
+    "babel-plugin-optimize-react": "0.0.4",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
+    "rimraf": "^3.0.2",
+    "terser-webpack-plugin": "^3.0.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "dev": "parcel serve ./src/index.html"
+    "dev": "webpack-dev-server --mode=development",
+    "clean": "rimraf dist && npm clean-install",
+    "build": "rimraf dist && webpack --mode production"
   },
   "repository": {
     "type": "git",
