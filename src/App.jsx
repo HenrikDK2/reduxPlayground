@@ -1,12 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
 import { Provider } from "react-redux";
+import thunk from "redux-thunk";
 import Pages from "./Pages";
 import rootReducer from "./reducers";
 
 //Store
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
 const App = () => {
   return (
