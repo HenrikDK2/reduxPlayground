@@ -5,7 +5,9 @@ const rootReducer = (state = { test: "hej" }, action) => {
     case "FILTERUSERS":
       return {
         ...state,
-        filter: state.filter((e) => e.name.toLowerCase().includes(action.value.toLowerCase())),
+        filter: state.users.filter((e) =>
+          e.name.toLowerCase().includes(action.value.toLowerCase())
+        ),
       };
     default:
       return state;

@@ -1,0 +1,10 @@
+.list-container {
+  display: flex;
+}
+
+.list {
+  background: #f8f8f8;
+  height: 500px;
+  flex: 1;
+  overflow-y: scroll;
+}

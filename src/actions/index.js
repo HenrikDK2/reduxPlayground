@@ -5,7 +5,7 @@ export const updateUsers = () => {
       .then((data) => {
         dispatch({
           type: "UPDATEUSERS",
-          payload: data,
+          payload: { users: data },
         });
       });
   };
